@@ -2,18 +2,24 @@ $(document).ready(function () {
 
     var a = moment().format("MMMM Do YYYY");    
     $("#currentDay").append(a);
+    //creating var for text area / task input
+    var task = ("");
+    var task = document.createElement("textarea");
 
     var clock  = [9, 10, 11, 12, 1, 2, 3, 4, 5];
     for (var i = 0; i < clock.length; i++) {
+   //creating row and appending it to the container 
         var line = $("<row>");
         $(".container").append(line);}
+    // need 3 columns and 9 rows 
     // creating new columns on container 
     var column = $("</col>");
     var newColumn = $("</col>");
-
-    $(".container").append(column)
+   line.append(column, newColumn);
+    //setting attr to columnm
     column.atrr("class","col-2 time");
     newColumn.atrr("class", "col-9 task")
+    
     //if clock index is greater than 8, set as am
     if(clock[i]> 8){
         column.text(clock[i] + "AM");}
@@ -24,14 +30,14 @@ $(document).ready(function () {
  // creating save button with fontawesome <i class="far fa-save"></i>
     var saveBtn = $("<button>");
     saveBtn.atrr("id", "saveBtn far fa-save col-1");
-    //adding prevent default so page will not reload once save is clicked
+    //adding prevent default so page will not reload once save button is clicked
     document.getElementById("saveBtn").addEventListener("click", function(event){
         event.preventDefault()
       });
 
 
-
-    localStorage.setItem
+     // to keep task info on text area even after page is reloaded 
+    localStorage.setItem(hour,task);
     
 
     });
