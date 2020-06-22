@@ -39,15 +39,9 @@ $(document).ready(function () {
       var icon = $("<i>");
       icon.addClass("far fa-save");
       record.append(icon);
-      column3.append(record);
+      column3.append(record);  
+
+      }
     
 
-    
-      //adding prevent default so page will not reload once save button is clicked
-      //   document.getElementById("record").addEventListener("click", function (event) {
-      //     event.preventDefault();
-      //   });
-      // to keep task info on text area even after page is reloaded
-      //localStorage.setItem(clock, task);
-    }
-  });
+    });
