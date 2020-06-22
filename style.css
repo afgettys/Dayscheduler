@@ -1,0 +1,92 @@
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  line-height: 1;
+  background-color:#cccccc;
+}
+
+h1 {
+  color:#66b266;
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #333333;
+  border-style: none;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+textarea:focus{
+  outline:none;
+  border-left: 1px solid black;
+}
+
+
+.nope {
+  font-size: 18px;
+  color: rgb(97, 97, 97);
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: #404040;
+  border-radius: 0;
+  border-bottom: 10px solid #cccccc;
+}
+
+.description{
+  white-space: pre-wrap;
+}
+
+.time-block{
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid black;;
+}
+
+.hour {
+  background-color: #4ca64c;
+  color: lightgrey;
+  font-weight: bold;
+  border-top: 1px dashed black;
+  padding: 10px;
+  padding-top: 30px;
+}
+
+.past {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.present {
+  background-color: #000000;
+  color: white;
+}
+
+.future {
+  background-color: #1f1c2c;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #004c00;
+  color:black;
+  border-style: none;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
